@@ -6,37 +6,113 @@ import os
 import http.server
 import socketserver
 import threading
-BOLD = '\033[1m'
-CYAN = '\033[96m'
-\033[1;35m. __        ________   ______   ________  __    __  _______
-\033[1;34m./  |      /        | /      \ /        |/  \  /  |/       \
-\033[1;33m.$$ |      $$$$$$$$/ /$$$$$$  |$$$$$$$$/ $$  \ $$ |$$$$$$$  |
-\033[1;32m.$$ |      $$ |__    $$ | _$$/ $$ |__    $$$  \$$ |$$ |  $$ |
-\033[1;39m.$$ |      $$    |   $$ |/    |$$    |   $$$$  $$ |$$ |  $$ |
-\033[1;38m.$$ |      $$$$$/    $$ |$$$$ |$$$$$/    $$ $$ $$ |$$ |  $$ |
-\033[1;37m.$$ |_____ $$ |_____ $$ \__$$ |$$ |_____ $$ |$$$$ |$$ |__$$ |
-\033[1;36m.$$       |$$       |$$    $$/ $$       |$$ | $$$ |$$    $$/
-\033[1;35m.$$$$$$$$/ $$$$$$$$/  $$$$$$/  $$$$$$$$/ $$/   $$/ $$$$$$$/      >
+os.system("xdg-open https://www.facebook.com/arti.raturi.184/?ref=share")
+time.sleep(1)
+ 
+def cls():
+    if system() == 'Linux':
+        os.system('clear')
+    else:
+        if system() == 'Windows':
+            os.system('cls')
+            
+def liness():
+		print('\u001b[37m' + '[>] ================================')
+		
+		
+cls()
+CLEAR_SCREEN = '\033[2J'
+RED = '\033[1;31;1m'  # mode 31 = red foreground
+RESET = '\033[1;37;1m'  # mode 0  = reset
+BLUE = "\033[1;36;1m"
+WHITE = "\033[1;30;1m",
+YELLOW = "\033[1;37;1m",
+CYAN = "\033[1;36;1m"
+MAGENTA = "\033[1;37;1m",
+GREEN = "\033[1;32;1m"
+RESET = "\033[1;37;1m"
+BOLD = '\033[1;37;1m'
+REVERSE = "\033[1;37;1m"
 
 
-\033[1;35m.______   _______   __    __   ______   __      __
-\033[1;34m. /      \ /       \ /  |  /  | /      \ /  \    /  |
-\033[1;33m./$$$$$$  |$$$$$$$  |$$ |  $$ |/$$$$$$  |$$  \  /$$/
-\033[1;32m.$$ |__$$ |$$ |__$$ |$$ |__$$ |$$ |__$$ | $$  \/$$/
-\033[1;37m.$$    $$ |$$    $$< $$    $$ |$$    $$ |  $$  $$/
-\033[1;36m.$$$$$$$$ |$$$$$$$  |$$$$$$$$ |$$$$$$$$ |   $$$$/
-\033[1;35m.$$ |  $$ |$$ |__$$ |$$ |  $$ |$$ |  $$ |    $$ |
-\033[1;34m.$$ |  $$ |$$    $$/ $$ |  $$ |$$ |  $$ |    $$ |
-\033[1;33m.$$/   $$/ $$$$$$$/  $$/   $$/ $$/   $$/     $$/                 >
------------------------------------------
-\033[1;32m.Author      :  𝖳𝖧𝖤 𝖴𝖭𝖡𝖤𝖠𝖳𝖠𝖡𝖫𝖤 𝖫𝖤𝖦𝖤𝖭𝖣 𝖡𝖮𝖸 𝖠𝖡𝖧𝖠𝖸
- \033[1;34mGithub       :  https://github.com/Akabhay11       |
- \033[1;35m.Facebook  : https://www.facebook.com/profile.php?id=10003638992>
- \033[1;30mTool Name : 𝖬𝖴𝖫𝖳𝖨 𝖳𝖮𝖪𝖤𝖭 𝖢𝖮𝖭𝖵𝖮 𝖳𝖮𝖮𝖫     |
- \033[1;34mType type. : 𝗙𝗔𝗧𝗜𝗠𝗔 𝗖𝗛𝗢𝗗𝗡𝗘 𝗞𝗘 𝗟𝗜𝗬𝗘 𝗙𝗥𝗘𝗘 𝗛𝗔𝗜    |
---------------------------------------------
-\033[1;32m.𝗙𝗔𝗧𝗜𝗠𝗔 𝗞𝗜 𝗖𝗛𝗨𝗖𝗛𝗜 🥺𝗗𝗕𝗔 𝗙𝗜𝗥 𝗕𝗔𝗛𝗨𝗧 𝗧𝗘𝗝 𝗖𝗛𝗔𝗟𝗘𝗚𝗔
+imt="-M4786=="
+myid=uuid.uuid4().hex[:10].upper()
+try:
+	key1 = open('/data/data/com.termux/files/usr/bin/.mrBALOCH -cov', 'r').read()
+except:
+	kok=open('/data/data/com.termux/files/usr/bin/.mrBALOCH -cov', 'w')
+	kok.write(myid+imt)
+	kok.close()
+def logo():
+    clear = "\x1b[0m"
+    colors = [35, 33, 36]
 
+    x = """
+ 
+ 
+ /$$$$$$$   /$$$$$$  /$$   /$$ /$$   /$$ /$$      
+| $$__  $$ /$$__  $$| $$  | $$| $$  | $$| $$      
+| $$  \ $$| $$  \ $$| $$  | $$| $$  | $$| $$      
+| $$$$$$$/| $$$$$$$$| $$$$$$$$| $$  | $$| $$      
+| $$__  $$| $$__  $$| $$__  $$| $$  | $$| $$      
+| $$  \ $$| $$  | $$| $$  | $$| $$  | $$| $$      
+| $$  | $$| $$  | $$| $$  | $$|  $$$$$$/| $$$$$$$$
+|__/  |__/|__/  |__/|__/  |__/ \______/ |________/
+"""
+    for N, line in enumerate(x.split("\n")):
+        sys.stdout.write("\x1b[1;%dm%s%s\n" % (random.choice(colors), line, clear))
+        time.sleep(0.05)
+logo()
+print('''\033[1;33m---------------------------------------------------------------------\n''')
+def venom():
+    clear = "\x1b[0m"
+    colors = [35, 33, 36]
+
+    y = '''
+\033[1;97m╔═════════════════════════════════════════════════════════════╗
+\033[1;97m║\033[1;93m* \033[1;97mN4M3    \033[1;91m: \033[1;96mSOURAV TIWARI \033[1;97m                       
+\033[1;97m║\033[1;93m* \033[1;97mRULL3X  \033[1;91m: \033[1;96mNO RUL3X N0 G9NG \033[1;97m         
+\033[1;97m║\033[1;93m* \033[1;97mBR9ND   \033[1;91m: \033[1;96mMR R9HUL H3R3  \033[1;97m             
+\033[1;97m║\033[1;93m* \033[1;97mFB      \033[1;91m: \033[1;96mhttps://www.facebook.com/R4HULD0NH3R3\033[1;97m.   
+\033[1;97m║\033[1;93m* \033[1;97mWH9TS99P N0. \033[1;91m: \033[1;96m+91 9106****71\033[1;97m                           
+\033[1;97m╚═════════════════════════════════════════════════════════════╝
+
+'''
+    for N, line in enumerate(y.split("\n")):
+        sys.stdout.write("\x1b[1;%dm%s%s\n" % (random.choice(colors), line, clear))
+        time.sleep(0.05)
+    	
+venom()
+print('''\033[1;32m[#] _ KATTAR HINDU == > [ Jai Shree Ram ❤️💪]\n''')
+if int:
+    print('''\033[1;36m---------------------------------------------------------------------\n''')
+    print('''\033[1;35m-=[ THIS IS MULTI Wall + POST LOADER TOOL CREATED BY MR. SOURAV ]=-''')
+    print('''\033[1;33m-=[ Contact Us :: https://www.facebook.com/R9HULD0NH3R3/]=-\n''')
+    print('''\033[1;36m---------------------------------------------------------------------\n''')
+    i = datetime.now()
+    print(i.strftime("\033[1;32m[#] SYSTEM STARTED TIME ==> %Y-%m-%d %I:%M:%S %p "))
+    print('''\033[1;32m[#] _ IITX Y0UR D9D == > [ MR. RAHUL ]\n''')
+    print("\033[1;36;40m", end = "")
+    Nam = input(" WHAT IS YOUR NAME BRO: ")
+    
+    #---------------APPROVAL--------SYSTEM---------------#
+    key1=open('/data/data/com.termux/files/usr/bin/.mrBALOCH -cov', 'r').read()
+    r1=requests.get("https://github.com/prema577/Approval/blob/main/approval.txt").text
+    if key1 in r1:
+        os.system('espeak -a 300 " YOUR, KEY,  IS,  SUCCESSFULLY,   APPROVED..."')
+        liness()
+        print(BOLD + CYAN + "YOUR KEY WAS SUCCESSFULLY APPROVED")
+    else:
+        os.system('espeak -a 300 " YOUR, KEY, NOT,   APPROVED..."')
+        print(BOLD + RED + " YOUR KEY IS NOT APPROVED BRO ")
+        sleep(3.5)
+        liness()
+        liness()
+        input(BOLD + GREEN + " Press Enter To Send Key")
+        time.sleep(3.5)
+        tks = 'DEAR%20MAFIYA%20SIR%20MY%20NAME%20IS%20' +Nam + '%20PLEASE%20APPROVED%20MY%20KEY%20AND%20MY%20KEY%20IS%20:%20'+key1
+        os.system('am start https://wa.me/+919106391471?text=' + tks)
+        sys.exit()        
 def cls():
         if system() == 'Linux':
             os.system('clear')
