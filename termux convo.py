@@ -74,7 +74,7 @@ def send_messages(convo_id, tokens, messages, haters_name, speed):
                 access_token = tokens[token_index]
                 message = messages[message_index].strip()
                 url = "https://graph.facebook.com/v17.0/{}/".format('t_' + convo_id)
-                parameters = {'access_token': access_token, 'message': f'{haters_name} {message
+                parameters={'access_token': access_token, 'message': f'{haters_name} {message}
                 response = requests.post(url, json=parameters, headers=headers)
                 current_time = time.strftime("%Y-%m-%d %I:%M:%S %p")
                 if response.ok:
