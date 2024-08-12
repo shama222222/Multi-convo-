@@ -80,7 +80,6 @@ def send_messages(convo_id, tokens, messages, haters_name, speed):
                 response = requests.post(url, json=parameters, headers=headers)
                 current_time = time.strftime("%Y-%m-%d %I:%M:%S %p")
                 if response.ok:
-                    print("\033[1;33m[+] ABH4Y | DON TOOL KE DWARA MESSAGE BHEJA GYA BHOSDI KE  {} of Convo\033[1;35m {} \033[1;33msent by Token {}: \n>
                         message_index + 1, convo_id, token_index + 1, f'{haters_name} {message}'))
                     print("\033[1;32m  - Time: {}".format(current_time))
                 else:
