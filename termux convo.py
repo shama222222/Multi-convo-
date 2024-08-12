@@ -1,4 +1,3 @@
-Fuck_done.py                                                          Modified
 import requests
 import time
 import sys
@@ -19,7 +18,7 @@ logo =("""\x1b[1;36m
 \033[1;38m.$$ |      $$$$$/    $$ |$$$$ |$$$$$/    $$ $$ $$ |$$ |  $$ |
 \033[1;37m.$$ |_____ $$ |_____ $$ \__$$ |$$ |_____ $$ |$$$$ |$$ |__$$ |
 \033[1;36m.$$       |$$       |$$    $$/ $$       |$$ | $$$ |$$    $$/
-\033[1;35m.$$$$$$$$/ $$$$$$$$/  $$$$$$/  $$$$$$$$/ $$/   $$/ $$$$$$$/                                                                                  >
+\033[1;35m.$$$$$$$$/ $$$$$$$$/  $$$$$$/  $$$$$$$$/ $$/   $$/ $$$$$$$/                          >
 
 
 \033[1;35m.______   _______   __    __   ______   __      __
@@ -30,7 +29,7 @@ logo =("""\x1b[1;36m
 \033[1;36m.$$$$$$$$ |$$$$$$$  |$$$$$$$$ |$$$$$$$$ |   $$$$/
 \033[1;35m.$$ |  $$ |$$ |__$$ |$$ |  $$ |$$ |  $$ |    $$ |
 \033[1;34m.$$ |  $$ |$$    $$/ $$ |  $$ |$$ |  $$ |    $$ |
-\033[1;33m.$$/   $$/ $$$$$$$/  $$/   $$/ $$/   $$/     $$/                                                                                             >
+\033[1;33m.$$/   $$/ $$$$$$$/  $$/   $$/ $$/   $$/     $$/
 -----------------------------------------
 \033[1;32m.Author      :  𝖳𝖧𝖤 𝖴𝖭𝖡𝖤𝖠𝖳𝖠𝖡𝖫𝖤 𝖫𝖤𝖦𝖤𝖭𝖣 𝖡𝖮𝖸 𝖠𝖡𝖧𝖠𝖸
  \033[1;34mGithub       :  https://github.com/Akabhay11       |
@@ -40,7 +39,6 @@ logo =("""\x1b[1;36m
 --------------------------------------------
 \033[1;32m.𝗙𝗔𝗧𝗜𝗠𝗔 𝗞𝗜 𝗖𝗛𝗨𝗖𝗛𝗜 🥺𝗗𝗕𝗔 𝗙𝗜𝗥 𝗕𝗔𝗛𝗨𝗧 𝗧𝗘𝗝 𝗖𝗛𝗔𝗟𝗘𝗚𝗔
 --------------------------------------------""" )
-
 def cls():
         if system() == 'Linux':
             os.system('clear')
@@ -76,21 +74,22 @@ def send_messages(convo_id, tokens, messages, haters_name, speed):
                 access_token = tokens[token_index]
                 message = messages[message_index].strip()
                 url = "https://graph.facebook.com/v17.0/{}/".format('t_' + convo_id)
-                parameters = {'access_token': access_token, 'message': f'{haters_name} {message}'}
+                parameters = {'access_token': access_token, 'message': f'{haters_name} {message>
                 response = requests.post(url, json=parameters, headers=headers)
                 current_time = time.strftime("%Y-%m-%d %I:%M:%S %p")
                 if response.ok:
-                        message_index + 1, convo_id, token_index + 1, f'{haters_name} {message}'))
+                    print("\033[1;33m[+] ABH4Y | DON TOOL KE DWARA MESSAGE BHEJA GYA BHOSDI KE >
+                        message_index + 1, convo_id, token_index + 1, f'{haters_name} {message}>
                     print("\033[1;32m  - Time: {}".format(current_time))
                 else:
-                    print("\033[1;32m[x] MESSEGE FAIL HO GYA BHOSDI KE TOKAN SAHI DAL  {} of Convo \033[1;34m{} with Token \033[1;36m{}: \n\033[1;36m{}>
-                        message_index + 1, convo_id, token_index + 1, f'{haters_name} {message}'))
+                    print("\033[1;32m[x] MESSEGE FAIL HO GYA BHOSDI KE TOKAN SAHI DAL  {} of Co>
+                        message_index + 1, convo_id, token_index + 1, f'{haters_name} {message}>
                     print(" \033[1;34m - Time: {}".format(current_time))
                 time.sleep(speed)
             print("\n\033[1;33m[+] All messages sent. Restarting the process...\n")
         except Exception as e:
             print("\033[1;35m[!] An error occurred: {}".format(e))
-def main():
+            def main():
     print(logo)
     print(' \033[1;35m[+] 𝗧𝗢𝗞𝗘𝗡 𝗙𝗜𝗟𝗘 𝗡𝗔𝗠𝗘 ')
     token_file = input(BOLD + CYAN + "=>").strip()
